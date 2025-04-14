@@ -1,0 +1,15 @@
+@startuml
+skinparam linetype ortho
+
+[UI] <<..rookiecamp.testing.ui..>> as ui
+[Service] <<..rookiecamp.testing.service..>> as service
+[Util] <<..rookiecamp.testing.util..>> as util
+[Persistence] <<..rookiecamp.testing.persistence..>> as persistence
+
+ui --> service
+service --> persistence
+service -right-> util
+ui -right-> util
+persistence -right-> util
+
+@enduml
