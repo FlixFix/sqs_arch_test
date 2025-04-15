@@ -2,18 +2,19 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <parent>
-    <groupId>de.qaware.qacampus.ec2022</groupId>
-    <artifactId>testen-advanced</artifactId>
+
+
+  <groupId>de.qaware.qacampus.ec2022</groupId>
+    <artifactId>04-archunit</artifactId>
     <version>1.0-SNAPSHOT</version>
-  </parent>
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>04-archunit</artifactId>
+
   <packaging>pom</packaging>
+
   <modules>
-    <module>01-uebung</module>
     <module>02-loesung</module>
+    <module>01-uebung</module>
   </modules>
 
   <dependencies>
@@ -27,6 +28,7 @@
     <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter</artifactId>
+      <version>5.12.2</version>
       <scope>test</scope>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-simple -->
